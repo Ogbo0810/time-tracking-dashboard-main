@@ -1,0 +1,305 @@
+/* ******************************************************************************************
+TABLE OF CONTENTS
+** - Body Area
+** - Grid Content Area
+** - Profile Area
+** - cards Area
+** - Attribution Area
+****************************************************************************************** */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+/* ==========================================================================================
+Body Area
+========================================================================================== */
+body{
+font-family: 'Rubik';
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: hsl(226, 43%, 10%);
+}
+
+/* ==========================================================================================
+Grid Content Area
+========================================================================================== */
+.container{
+    width: 65%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+/* ==========================================================================================
+Profile Area
+========================================================================================== */
+.profile{
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+    grid-row: span 2;
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.profile > .report{
+    filter: drop-shadow(0 5px 0 hsl(246, 80%, 60%));
+    /* height: 54%; */
+    grid-row: span 2;
+    padding: 30px;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 10px;
+    color: white;
+    cursor:default;
+}
+
+.profile > .report > img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: solid 3px white;
+    margin-bottom: 45px;
+}
+
+.profile > .report > p{
+    font-size: 12px;
+    margin: 0 0 5px 0 ;
+    color: hsl(236, 100%, 87%);
+} 
+
+ .profile > .report > h1{
+    font-weight: 300;
+    margin: 0;
+}
+
+.profile > .timeframe{
+    padding: 20px 30px;
+    background-color:hsl(235, 46%, 20%);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    border-radius: 0 0 10px 10px;
+}
+
+.profile > .timeframe > a{
+    font-size: 15px;
+    text-decoration: none;
+    color: hsl(235, 45%, 61%);
+}
+
+.profile > .timeframe > a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.profile > .timeframe > a:focus{
+    color: white;
+}
+
+/* ==========================================================================================
+cards Area
+========================================================================================== */
+.items{
+    border-radius: 10px;
+}
+
+.items h1{
+    font-weight: 300;
+    font-size: 48px;
+    margin-top: 0.5em;
+}
+
+.icon{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height:70px;
+}
+
+.work>.icon{
+    background-color: hsl(15, 100%, 70%);
+}
+
+.play>.icon{
+    background-color: hsl(195, 74%, 62%);
+}
+
+.study>.icon{
+    background-color: hsl(348, 100%, 68%);
+}
+
+.exercise>.icon{
+    background-color: hsl(145, 58%, 55%);
+}
+
+.social>.icon{
+    background-color: hsl(264, 64%, 52%);
+}
+
+.self-care>.icon{
+    background-color: hsl(43, 84%, 65%);
+}
+
+.items>.icon> svg{
+    position: relative;
+    height: 4rem;
+    margin-left: 55%;
+    bottom: 11px;
+}
+.exercise>.icon>svg{
+    position: relative;
+    bottom: 5px;
+}
+
+.item-content{
+    padding: 0 20px 30px 20px;
+    background-color: hsl(235, 46%, 20%);
+    color: white;
+    border-radius: 10px;
+    filter: drop-shadow(0 -25px hsl(235, 46%, 20%));
+}
+
+.item-content p{
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    width: 100%;
+}
+
+.item-content>p{
+    display: inline;
+}
+
+.dot-group{
+    display: inline-flex;
+    float: right;
+    justify-content: space-around;
+    align-items: center;
+    height: 1vh;
+}
+.dot{
+    width: 4px;
+    height: 4px;
+    border-radius:50%;
+    background: hsl(236, 100%, 87%);
+    margin-right: 2px;
+}
+
+.item-content h1{
+    margin-bottom: 8px;
+}
+
+.time{
+    font-size: 13px;
+    outline: none;
+    text-decoration: none;
+    color:hsl(236, 100%, 87%);
+}
+
+
+/* [
+  {
+    "title": "Work",
+    "timeframes": {
+      "daily": {
+        "current": 5,
+        "previous": 7
+      },
+      "weekly": {
+        "current": 32,
+        "previous": 36
+      },
+      "monthly": {
+        "current": 103,
+        "previous": 128
+      }
+    }
+  },
+  {
+    "title": "Play",
+    "timeframes": {
+      "daily": {
+        "current": 1,
+        "previous": 2
+      },
+      "weekly": {
+        "current": 10,
+        "previous": 8
+      },
+      "monthly": {
+        "current": 23,
+        "previous": 29
+      }
+    }
+  },
+  {
+    "title": "Study",
+    "timeframes": {
+      "daily": {
+        "current": 0,
+        "previous": 1
+      },
+      "weekly": {
+        "current": 4,
+        "previous": 7
+      },
+      "monthly": {
+        "current": 13,
+        "previous": 19
+      }
+    }
+  },
+  {
+    "title": "Exercise",
+    "timeframes": {
+      "daily": {
+        "current": 1,
+        "previous": 1
+      },
+      "weekly": {
+        "current": 4,
+        "previous": 5
+      },
+      "monthly": {
+        "current": 11,
+        "previous": 18
+      }
+    }
+  },
+  {
+    "title": "Social",
+    "timeframes": {
+      "daily": {
+        "current": 1,
+        "previous": 3
+      },
+      "weekly": {
+        "current": 5,
+        "previous": 10
+      },
+      "monthly": {
+        "current": 21,
+        "previous": 23
+      }
+    }
+  },
+  {
+    "title": "Self Care",
+    "timeframes": {
+      "daily": {
+        "current": 0,
+        "previous": 1
+      },
+      "weekly": {
+        "current": 2,
+        "previous": 2
+      },
+      "monthly": {
+        "current": 7,
+        "previous": 11
+      }
+    }
+  }
+] */
