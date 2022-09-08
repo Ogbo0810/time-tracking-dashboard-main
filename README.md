@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Ogbo0810/time-tracking-dashboard-main)
-- Live Site URL: [Add live site URL here](https://ogbo0810.github.io/time-tracking-dashboard-main/#)
+- Solution URL: [https://github.com/Ogbo0810/time-tracking-dashboard-main]()
+- Live Site URL: [https://ogbo0810.github.io/time-tracking-dashboard-main/#]()
 
 ### Built with
 
