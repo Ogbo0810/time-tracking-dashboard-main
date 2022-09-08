@@ -24,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Ogbo0810/time-tracking-dashboard-main]()
-- Live Site URL: [https://ogbo0810.github.io/time-tracking-dashboard-main/#]()
+- Live Site URL: [https://ogbo0810.github.io/time-tracking-dashboard-main]()
 
 ### Built with
 
